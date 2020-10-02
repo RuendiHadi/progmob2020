@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
         Button myBtn = (Button)findViewById(R.id.button1);
         final EditText myEditText = (EditText)findViewById(R.id.editText1);
         Button btnHelp = (Button)findViewById(R.id.btnHelp);
+        Button btnTracker = (Button)findViewById(R.id.btnTraciker);
 
         //action
         textView.setText(R.string.text_hello_world);
@@ -30,6 +31,15 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 //Log.d("Coba Klikk", myEditText.getText().toString());
                 textView.setText(myEditText.getText().toString());
+            }
+        });
+        btnTracker.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,TrackerActivity.class);
+
+
+                startActivity(intent);
             }
         });
         btnHelp.setOnClickListener(new View.OnClickListener() {
