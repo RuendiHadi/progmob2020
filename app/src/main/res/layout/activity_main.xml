@@ -21,7 +21,7 @@
         android:id="@+id/button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="260dp"
+        android:layout_marginBottom="340dp"
         android:text="Replace"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -37,10 +37,10 @@
         android:text="Name"
         app:layout_constraintBottom_toTopOf="@+id/button1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.482"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/mainActivityTextView"
-        app:layout_constraintVertical_bias="0.794" />
+        app:layout_constraintVertical_bias="0.308" />
 
     <Button
         android:id="@+id/btnHelp"
@@ -52,7 +52,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button1"
-        app:layout_constraintVertical_bias="0.094" />
+        app:layout_constraintVertical_bias="0.062" />
 
     <Button
         android:id="@+id/btnTraciker"
@@ -61,9 +61,40 @@
         android:text="Tugas 2: Tracker Layout"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnHelp"
-        app:layout_constraintVertical_bias="0.208" />
+        app:layout_constraintVertical_bias="0.053" />
+
+    <Button
+        android:id="@+id/buttonListView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="4dp"
+        android:text="List"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTraciker" />
+
+    <Button
+        android:id="@+id/buttonRecyclerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="4dp"
+        android:text="Recycler"
+        app:layout_constraintStart_toEndOf="@+id/buttonListView"
+        app:layout_constraintTop_toBottomOf="@+id/btnTraciker" />
+
+    <Button
+        android:id="@+id/buttonCardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Card"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toEndOf="@+id/buttonRecyclerView"
+        app:layout_constraintTop_toBottomOf="@+id/btnTraciker" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
