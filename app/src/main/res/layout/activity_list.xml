@@ -7,7 +7,7 @@
     tools:context=".Pertemuan2.ListActivity">
 
     <ListView
-        android:id="@+id/rvLatihan"
+        android:id="@+id/cvLatihan"
         android:layout_width="411dp"
         android:layout_height="650dp"
         android:layout_marginTop="4dp"
@@ -23,5 +23,5 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rvLatihan" />
+        app:layout_constraintTop_toBottomOf="@+id/cvLatihan" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -24,7 +24,7 @@ public class ListActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list);
 
-        ListView lv = (ListView)findViewById(R.id.rvLatihan);
+        ListView lv = (ListView)findViewById(R.id.cvLatihan);
         Spinner sp = (Spinner)findViewById(R.id.spinnerLatihan);
 
         lv.setAdapter(new ArrayAdapter<String>(ListActivity.this, android.R.layout.simple_list_item_1,items));

@@ -9,19 +9,20 @@ import android.os.Bundle;
 import java.util.ArrayList;
 import java.util.List;
 
+import ukdw.com.progmob_2020.Adapter.MahasiswaCardAdapter;
 import ukdw.com.progmob_2020.Adapter.MahasiswaRecyclerAdapter;
 import ukdw.com.progmob_2020.Model.Mahasiswa;
 import ukdw.com.progmob_2020.R;
 
-public class RecyclerActivity extends AppCompatActivity {
+public class CardActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_recycler);
+        setContentView(R.layout.activity_card);
 
         RecyclerView rv = (RecyclerView)findViewById(R.id.cvLatihan);
-        MahasiswaRecyclerAdapter mahasiswaRecyclerAdapter;
+        MahasiswaCardAdapter mahasiswaCardAdapter;
 
         //data dummy
         List<Mahasiswa> mahasiswaList = new ArrayList<Mahasiswa>();
@@ -39,12 +40,13 @@ public class RecyclerActivity extends AppCompatActivity {
         mahasiswaList.add(m4);
         mahasiswaList.add(m5);
 
-        mahasiswaRecyclerAdapter = new MahasiswaRecyclerAdapter(RecyclerActivity.this);
-        mahasiswaRecyclerAdapter.setMahasiswaList(mahasiswaList);
+        mahasiswaCardAdapter = new MahasiswaCardAdapter(CardActivity.this);
+        mahasiswaCardAdapter.setMahasiswaList(mahasiswaList);
 
-        rv.setLayoutManager(new LinearLayoutManager(RecyclerActivity.this));
-        rv.setAdapter(mahasiswaRecyclerAdapter);
+        rv.setLayoutManager(new LinearLayoutManager(CardActivity.this));
+        rv.setAdapter(mahasiswaCardAdapter);
 
 
     }
+
 }
