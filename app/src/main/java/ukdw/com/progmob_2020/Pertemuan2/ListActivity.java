@@ -1,6 +1,5 @@
 package ukdw.com.progmob_2020.Pertemuan2;
 
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -25,7 +24,7 @@ public class ListActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list);
 
-        ListView lv = (ListView)findViewById(R.id.lvLatihan);
+        ListView lv = (ListView)findViewById(R.id.rvLatihan);
         Spinner sp = (Spinner)findViewById(R.id.spinnerLatihan);
 
         lv.setAdapter(new ArrayAdapter<String>(ListActivity.this, android.R.layout.simple_list_item_1,items));
