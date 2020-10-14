@@ -10,6 +10,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import ukdw.com.progmob_2020.Pertemuan2.CardActivity;
+import ukdw.com.progmob_2020.Pertemuan2.DebuggingActivity;
 import ukdw.com.progmob_2020.Pertemuan2.ListActivity;
 import ukdw.com.progmob_2020.Pertemuan2.RecyclerActivity;
 
@@ -26,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
         final EditText myEditText = (EditText)findViewById(R.id.editText1);
         Button btnHelp = (Button)findViewById(R.id.btnHelp);
         Button btnTracker = (Button)findViewById(R.id.btnTraciker);
+        Button btnPertemuan = (Button)findViewById(R.id.btnPertemuan);
 
         //pertemuan2
         Button btnList = (Button)findViewById(R.id.buttonListView);
@@ -80,6 +82,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, CardActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btnPertemuan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, DebuggingActivity.class);
                 startActivity(intent);
             }
         });
