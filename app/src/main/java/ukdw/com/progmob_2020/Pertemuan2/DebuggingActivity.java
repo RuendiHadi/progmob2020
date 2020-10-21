@@ -27,7 +27,7 @@ public class DebuggingActivity extends AppCompatActivity {
         DebuggingRecyclerAdapter debuggingRecyclerAdapter;
 
         //data dummy
-        List<MahasiswaDebugging> mahasiswaList = new ArrayList<MahasiswaDebugging>();
+        List<MahasiswaDebugging> mahasiswaListDebug = new ArrayList<MahasiswaDebugging>();
 
         //generate data mahasiswa
         MahasiswaDebugging m1 = new MahasiswaDebugging("Argo","72110101","084646464646");
@@ -36,15 +36,15 @@ public class DebuggingActivity extends AppCompatActivity {
         MahasiswaDebugging m4 = new MahasiswaDebugging("Katon","72110101","084646464646");
         MahasiswaDebugging m5 = new MahasiswaDebugging("Yetli","72110101","084646464646");
 
-        mahasiswaList.add(m1);
-        mahasiswaList.add(m2);
-        mahasiswaList.add(m3);
-        mahasiswaList.add(m4);
-        mahasiswaList.add(m5);
+        mahasiswaListDebug.add(m1);
+        mahasiswaListDebug.add(m2);
+        mahasiswaListDebug.add(m3);
+        mahasiswaListDebug.add(m4);
+        mahasiswaListDebug.add(m5);
 
         
         debuggingRecyclerAdapter = new DebuggingRecyclerAdapter(DebuggingActivity.this);
-        debuggingRecyclerAdapter.setMahasiswaList(mahasiswaList);
+        debuggingRecyclerAdapter.setMahasiswaList(mahasiswaListDebug);
 
         rv.setLayoutManager(new LinearLayoutManager(DebuggingActivity.this));
         rv.setAdapter(debuggingRecyclerAdapter);
