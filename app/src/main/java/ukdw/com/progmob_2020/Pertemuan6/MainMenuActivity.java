@@ -6,8 +6,10 @@ import android.app.ProgressDialog;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import java.util.List;
 
@@ -26,6 +28,14 @@ public class MainMenuActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_menu);
+        Toast.makeText(MainMenuActivity.this, "Dipilih", Toast.LENGTH_SHORT).show();
+        session = PreferenceManager.getDefaultSharedPreferences(MainMenuActivity.this);
+
+        if(session.getString("nimnik", "").isEmpty() && session.getString("nama", "").isEmpty()) {
+            finish();
+            startActivity(new Intent(MainMenuActivity.this, LoginActivity.class));
+            return;
+        }
 
         ImageView imgmhs = (ImageView)findViewById(R.id.imgMhs);
         ImageView imgDsn = (ImageView)findViewById(R.id.imgDsn);
