@@ -58,7 +58,7 @@ public class MahasiswaCardAdapter extends RecyclerView.Adapter<MahasiswaCardAdap
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            tvNama = itemView.findViewById(R.id.tvNama);
+            tvNama = itemView.findViewById(R.id.tvNamaMhs);
             tvNim = itemView.findViewById(R.id.tvNim);
             tvNoTelp = itemView.findViewById(R.id.tvNoTelp);
         }

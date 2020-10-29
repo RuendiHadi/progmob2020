@@ -70,10 +70,10 @@ public class MahasiswaCRUDRecyclerAdapter extends RecyclerView.Adapter<Mahasiswa
 
             public ViewHolder(@NonNull View itemView) {
                 super(itemView);
-                tvNama = itemView.findViewById(R.id.tvNama);
+                tvNama = itemView.findViewById(R.id.tvNamaMhs);
                 tvNim = itemView.findViewById(R.id.tvNim);
-                tvAlamat = itemView.findViewById(R.id.tvAlamat);
-                tvEmail = itemView.findViewById(R.id.tvEmail);
+                tvAlamat = itemView.findViewById(R.id.tvHariMk);
+                tvEmail = itemView.findViewById(R.id.tvSesi);
                 //tvNoTelp = itemView.findViewById(R.id.tvNoTelp);
 
                 itemView.setOnClickListener(new View.OnClickListener() {

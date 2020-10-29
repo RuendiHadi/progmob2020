@@ -9,7 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 import java.util.List;
-import ukdw.com.progmob_2020.Model.Mahasiswa;
+
 import ukdw.com.progmob_2020.Model.MahasiswaDebugging;
 import ukdw.com.progmob_2020.R;
 
@@ -57,7 +57,7 @@ public class DebuggingRecyclerAdapter extends RecyclerView.Adapter<DebuggingRecy
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            tvNama = itemView.findViewById(R.id.tvNama);
+            tvNama = itemView.findViewById(R.id.tvNamaMhs);
             tvNim = itemView.findViewById(R.id.tvNim);
             tvNoTelp = itemView.findViewById(R.id.tvNoTelp);
         }

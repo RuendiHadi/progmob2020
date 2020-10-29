@@ -9,13 +9,10 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import java.util.List;
-
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 import ukdw.com.progmob_2020.Model.DefaultResult;
-import ukdw.com.progmob_2020.Model.Mahasiswa;
 import ukdw.com.progmob_2020.Network.GetDataService;
 import ukdw.com.progmob_2020.Network.RetrofitClientInstance;
 import ukdw.com.progmob_2020.R;
@@ -28,10 +25,10 @@ public class MahasiswaAddActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mahasiswa_add);
 
-        EditText edNama = (EditText)findViewById(R.id.editTextNama);
+        EditText edNama = (EditText)findViewById(R.id.editTextNamaDosen);
         EditText edNim = (EditText)findViewById(R.id.editTextNim);
-        EditText edAlamat = (EditText)findViewById(R.id.editTextAlamat);
-        EditText edEmail = (EditText)findViewById(R.id.editTextEmail);
+        EditText edAlamat = (EditText)findViewById(R.id.editTextAlamatDosen);
+        EditText edEmail = (EditText)findViewById(R.id.editTextEmailDosen);
         Button btnSimpan = (Button)findViewById(R.id.buttonSimpanMhs);
         pd = new ProgressDialog(MahasiswaAddActivity.this);
 

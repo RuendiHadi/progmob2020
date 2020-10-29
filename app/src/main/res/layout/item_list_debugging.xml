@@ -34,10 +34,10 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="TextView"
-                app:layout_constraintTop_toBottomOf="@+id/tvNama" />
+                app:layout_constraintTop_toBottomOf="@+id/tvNamaMhs" />
 
             <TextView
-                android:id="@+id/tvNama"
+                android:id="@+id/tvNamaMhs"
                 android:layout_width="412dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"

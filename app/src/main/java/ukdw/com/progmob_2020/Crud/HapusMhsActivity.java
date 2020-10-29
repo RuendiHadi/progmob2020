@@ -26,7 +26,7 @@ public class HapusMhsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_hapus_mhs);
 
         EditText edNim = (EditText)findViewById(R.id.editTextNim);
-        Button btnHapus = (Button)findViewById(R.id.btnHapus);
+        Button btnHapus = (Button)findViewById(R.id.btnHapusDsn);
         pd = new ProgressDialog(HapusMhsActivity.this);
 
         btnHapus.setOnClickListener(new View.OnClickListener() {
